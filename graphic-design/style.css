@@ -1,0 +1,97 @@
+body{
+  background-color: black; /*#F8E1D1;
+  /*background-image: linear-gradient(rgb(67, 7, 85) , rgb(9, 44, 65));*/
+  color: #900C3F;
+  text-align: justify; 
+  font-family: verdana;
+  font-size: 18px;
+  white-space:wrap;
+  padding: 10px; 
+}
+h1 {
+  color:#88b6db; 
+  font-family: 'Hina Mincho', serif;
+  text-align:center;
+  font-size: 50px;
+}
+
+h2 {
+  background-color: #145366;
+  font-family: helvetica;
+  text-align: center;
+  padding: 7px;
+}
+#navbar, .projects {
+  background-color: #333 !important;
+  overflow: hidden;
+  text-align:center;
+  color: white;
+  margin: 25px;
+}
+
+.about-me {
+  padding: 30px;
+}
+
+#navbar,a {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+}
+
+img {
+  background-color: #000000;
+  border-radius: 20%;
+  border: 2.5px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  padding: 20px;
+}
+.about-me{
+  text-align:center;
+}
+p1{
+  width: 700px;
+  max-width: auto;
+  padding:3px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul, li
+{
+  width: 400px;
+  max-width: auto;
+  padding:10px;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .about-me {
+    width: 80%;}}
+
+.project-tile {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #900C3F;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
