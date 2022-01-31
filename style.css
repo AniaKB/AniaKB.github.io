@@ -2,14 +2,14 @@ body{
   background-color: black; /*#F8E1D1;
   /*background-image: linear-gradient(rgb(67, 7, 85) , rgb(9, 44, 65));*/
   color: #900C3F;
-  text-align: justify; 
+  text-align: justify;
   font-family: verdana;
   font-size: 18px;
   white-space:wrap;
-  padding: 10px; 
+  padding: 10px;
 }
 h1 {
-  color:#88b6db; 
+  color: #88b6db;
   font-family: 'Hina Mincho', serif;
   text-align:center;
   font-size: 50px;
@@ -94,4 +94,29 @@ ul, li
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+}
+
+.thumbnail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.thumbnail-container a {
+  padding: 0px;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.spacer {
+  width: 1px;
+  height: 200px;
 }
