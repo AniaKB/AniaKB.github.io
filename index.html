@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <head>
   <title>Ania Bennett</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet"> 
-  <script src="script.js" defer></script> 
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <div id="welcome-section"> 
-    <h1 class="text-center">Welcome to my Portfolio Page!</h1>
-  </div>
-  <div id="navbar">
-    <nav>
-        <a id="profile-link" target="_blank" href="https://github.com/AniaKB">Github</a>
-        <a href="#projects">Projects</a>
-        <a href="graphic-design/index.html">Graphic Design</a>
-        <a target="_blank" href="https://www.instagram.com/ania__kb/?hl=en">Instagram</a>
-        <a target="_blank" href="mailto: aniakb.artist@gmail.com">Contact</a>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </nav>
-   <img src="portrait.jpg">
 
-   <h2>About Me</h2>
-  <div class="about-me">
-    <p1 class="about-me">
-      Hi! My name is Ania Bennett and I am a Graphic Designer and Junior Software Engineer. 
-    </p1>
+<body>
+  <div id="welcome-section">
+    <img src="portrait.jpg">
+    <div class="about-me">
+      <h1>
+        About Me
+      </h1>
+      <p class="about-me">
+        Hi! My name is Ania Bennett and I am a Junior Frontend Software Engineer.
+      </p>
+    </div>
   </div>
- 
+  <div id="content">
+    <nav>
+      <a id="profile-link" target="_blank" href="https://github.com/AniaKB" class="nav">Github</a>
+      <a href="#projects" class="nav">Projects</a>
+      <a target="_blank" href="mailto: aniakb.artist@gmail.com" class="nav">Contact</a>
+    </nav>
+
   <h2>Technical Skills</h2>
   <div class="row">
     <div class="column">
       <ul>
-        <li><strong>Languages:</strong> JavaScript, HTML, CSS, Sass, SQL, Python</li>
-        <li><strong>Libraries & Frameworks:</strong> Vue.js, Bootstrap, jQuery, Lodash, date-fns</li>
+        <li><strong>Languages:</strong></li>
+        <li>JavaScript, HTML, CSS, Sass, SQL, Python</li>
+        <br>
+        <li><strong>Libraries & Frameworks:</strong></li>
+        <li>Vue.js, Bootstrap, jQuery, Lodash, date-fns</li>
       </ul>
     </div>
     <div class="column">
       <ul>
-        <li><strong>Tooling:</strong></li> 
+        <li><strong>Tooling:</strong></li>
         <li>VSCode, Git, GitHub, GitHub Pages, ESLint, All Adobe CC Products</li>
         <br>
-        <li><strong>Skills:</strong></li> 
+        <li><strong>Skills:</strong></li>
         <li>Responsive Web Design, Wireframe mockups, Agile Certified Developer, CRM software</li>
       </ul>
     </div>
     </div>
-  </div> 
-  
-  <div class="projects" id="projects">
-    <h2> Projects</h2>
+  </div>
+  <div class="projects">
+    <h2>
+      Professional Experience
+    </h2>
+    <h3>
+      Image Resources, Inc.
+    </h3>
     <p>
-      <a button type="button" target="_blank" href="https://codepen.io/gazarino/pen/MWewrOj" class="project-tile">Tribute Page</a> 
+      I am currently working on a web app for our video streaming services.
     </p>
-    <p> 
-      <a button type="button" target="_blank" href="https://aniakb.github.io/calculator" class="project-tile">Calculator</a> 
+    <h3>
+      Exitus
+    </h3>
+    <p>
+      I did a two month internship for a startup.
+      I created the portion of their business app that does the calculations required for selling a business.
+      See project below.
     </p>
-    <p> 
-      <a button type="button" target="_blank" href="#" class="project-tile">Tamagachi Pet (in progress)</a> 
-    </p>
-    <p> 
-      <a button type="button" target="_blank" href="#" class="project-tile">ContactRM (in progress)</a> 
+    <h3>
+      Free CodeCamp Indy Organizer
+    </h3>
+    <p>
+      I organize the events for Free Code Camp Indy.
     </p>
   </div>
+  <div class="projects" id="projects">
+    <h2>Projects</h2>
+    <section>
+      <a button type="button" target="_blank" href="https://aniabennett.com/exitus/" class="project-tile">Exitus App</a>
+      <p class="project-description">
+        March of 2022, I did a 2 month internship for Exitus Global.
+        I built a working prototype of their Business Broker App to show to shareholders using Vue.
+        The app saves the business seller money by breaking down financials information and by calculating expenses.
+      </p>
+    </section>
+    <section>
+      <a button type="button" target="_blank" href="https://aniabennett.com/elaine-vega/" class="project-tile">Actress Website</a>
+      <p class="project-description">
+        I created a website for my friend who is an actress. It is still in progress.
+      </p>
+    </section>
+    <section>
+      <a button type="button" target="_blank" href="https://aniakb.github.io/calculator" class="project-tile">Calculator</a>
+      <p class="project-description">
+        2020 project for my FreeCode Camp certificate
+      </p>
+    </section>
+  </div>
 
-  <footer>*Last Updated September 2021 by Ania Bennett</footer>
+  <footer>*Last Updated September 2022 by Ania Bennett</footer>
 </body>

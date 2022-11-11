@@ -1,0 +1,333 @@
+<div class="sliders" id="app">
+  <input v-model="company" id="company"> 
+  <div class="row">
+    {{ company }} sales (Finzap)
+    <div class="cell">
+      $<input
+        v-model="sales"
+        type="text"
+      >
+      <div class="progress"
+        style=""
+        v-model="sales"
+        min="1"
+        :max="sales"
+        class="sales"
+        ></div>
+    </div>
+  </div>
+   <div class="row">
+  {{ company }} profits (Finzap)
+    <div class="cell">
+      $<input 
+        v-model="profits"
+        type="text"
+      >
+      <progress 
+        :value="profits" 
+        min="1" 
+        :max="sales" 
+        class="profits"
+        disabled
+        ></progress>
+    </div>
+   </div>
+   <div class="row">
+  {{ company }} Addbacks (Finzap)
+    <div class="cell">
+      $<input
+        v-model="addbacks"
+        type="text"
+      >
+      <progress 
+        :value="addbacks"
+        type="range" 
+        min="1" 
+        :max="sales" 
+        class="addbacks"
+        ></progress>
+    </div>
+  </div>
+   <div class="row">
+  {{ company }} Seller's Discretionary Earnings
+    <div class="cell">
+      $<input 
+        v-model="discretionary"
+        type="text"
+      >
+      <input 
+        v-model="discretionary"
+        type="range" 
+        min="1" 
+        :max="1_000_000" 
+        class="slider"
+        disab0led
+      >
+    </div>
+  </div>
+  <div class="row">
+  Taxes
+    <div class="cell">
+    {{ percent(taxes) }}%
+      <input
+        type="range"
+        class="hidden"
+      >
+    </div>
+  </div>
+  <div class="row">
+  <strong>Cash Flow Net of Taxes</strong>
+    <div class="cell">
+    ${{ cashFlow.toLocaleString("en-US") }}
+      <input
+      type="range"
+      class="hidden"
+      disabled
+      >
+    </div>
+  </div><br>
+  <div class="row">
+  Sales Multiple
+    <div class="cell">
+    {{ salesMultiple }}&nbsp;
+      <input 
+        v-model="salesMultiple"
+        type="range"
+        min="1" 
+        :max="10" 
+        class="slider"
+        disabled
+      >
+    </div>
+  </div>
+   <div class="row">
+  Earnings Multiple
+    <div class="cell">
+    {{ earningsMultiple }}&nbsp;
+      <input 
+        v-model="earningsMultiple"
+        type="range" 
+        min="1" 
+        :max="10" 
+        class="slider"
+        disabled
+      >
+    </div>
+  </div>
+   <div class="row">
+  Value based on Sales Multiple
+    <div class="cell">
+    ${{ valueSales.toLocaleString("en-US") }}
+      <input 
+        v-model="valueSales"
+        type="range" 
+        min="1" 
+        :max="1_000_000" 
+        class="slider"
+        disabled
+       >
+     </div>
+  </div>
+  <div class="row">
+  Value based on Earnings Multiple
+    <div class="cell">
+    ${{ valueEarnings.toLocaleString("en-US") }}
+      <input 
+        v-model="valueEarnings"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+        disabled
+      >
+        
+   </div>
+   </div><br>
+   <div class="row">
+  Selling Price of the Business
+    <div class="cell">
+      ${{ sellingPrice.toLocaleString("en-US") }}
+      <input 
+        v-model.number="sellingPrice"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+      >
+    </div>
+   </div>
+   <div class="row">
+   Working Cap
+    <div class="cell">
+      ${{ workingCap.toLocaleString("en-US") }}
+      <input 
+        v-model="workingCap"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+        disabled
+      >
+    </div>
+   </div>
+   <div class="row">
+  Closing Fees
+    <div class="cell">
+    ${{ closingFees.toLocaleString("en-US") }}
+      <input 
+        v-model="closingFees"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+        disabled
+      >
+    </div>
+   </div>
+   <div class="row">
+  Guarantee SBA
+    <div class="cell">
+    ${{ guaranteeSBA.toLocaleString("en-US")  }}
+      <input 
+        v-model="guaranteeSBA"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+        disabled
+      >
+    </div>
+   </div>
+   <div class="row">
+  Subtotal
+    <div class="cell">
+    ${{ subtotal.toLocaleString("en-US") }}
+      <input 
+        v-model="subtotal"
+        type="range" 
+        min="1" 
+        :max="1_000_000"  
+        class="slider" 
+        disabled
+      >
+    </div>
+   </div>
+   <div class="row">
+  Down Payment by Buyer
+    <div class="cell">
+    ${{ downpayment.toLocaleString("en-US") }}
+      <input 
+        v-model.number="downpaymentPercent"
+        type="range" 
+        min="0" 
+        :max="100"  
+        class="slider" 
+      >
+    </div>
+   </div>
+   <div class="row">
+  Loan Amount
+      <div class="cell">
+      ${{ loanAmount.toLocaleString("en-US") }}
+      </div>
+   </div><br>
+   <div class="row">
+  Monthly Payment
+      <div class="cell">
+      ${{ payment.toLocaleString("en-US") }}
+      </div>
+   </div>
+   <div class="row">
+  Annualized Debt
+      <div class="cell">
+      ${{ annualizedDebt.toLocaleString("en-US") }}
+      </div>
+   </div>
+   
+   
+   <br>
+   <div class="row">
+  Net Cash Flow
+   <div class="cell">
+    ${{ cashFlow.toLocaleString("en-US") }}
+      <input 
+        v-model="cashFlow"
+        type="range" 
+        min="1" 
+        :max="1_000_000" 
+        class="slider"
+        disabled
+       >
+      </div>
+   </div>
+   <div class="row">
+  Personal Expenses to live
+    <div class="cell">
+      $<input
+        v-model="personalExpenses"
+        type="text"
+      >
+      <input 
+        v-model="personalExpenses"
+        type="range" 
+        min="0" 
+        :max="cashFlow" 
+        class="slider"
+      >
+    </div>
+  </div>
+   <div class="row">
+  Net Cash Flow to Service the Debt
+    <div class="cell">
+    ${{ netCashDebt.toLocaleString("en-US") }}
+      <input 
+        v-model="netCashDebt"
+        type="range" 
+        min="0" 
+        :max="cashFlow" 
+        class="slider"
+        disabled
+      >
+    </div>
+  </div>
+  <div class="row">
+ Debt Service
+    <div class="cell"
+    >
+    <span 
+      class="green" 
+      v-if="debtService >= 1.25"
+    >
+    {{ debtService }}
+    </span>
+     <span 
+      class="red" 
+      v-if="debtService < 1.25"
+    >
+    {{ debtService }}
+    </span>
+      <input 
+        v-model="debtSerivce"
+        type="range" 
+        min="1" 
+        :max="1_000_000" 
+        class="slider"
+        disabled
+      >
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
