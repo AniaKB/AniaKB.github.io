@@ -1,5 +1,5 @@
 <div class="sliders" id="app">
-  <input v-model="company" id="company"> 
+  <input v-model="company" id="company">
   <div class="row">
     {{ company }} sales (Finzap)
     <div class="cell">
@@ -51,15 +51,15 @@
    <div class="row">
   {{ company }} Seller's Discretionary Earnings
     <div class="cell">
-      $<input 
+      $<input
         v-model="discretionary"
         type="text"
       >
-      <input 
+      <input
         v-model="discretionary"
-        type="range" 
-        min="1" 
-        :max="1_000_000" 
+        type="range"
+        min="1"
+        :max="1_000_000"
         class="slider"
         disab0led
       >
@@ -118,11 +118,11 @@
   Value based on Sales Multiple
     <div class="cell">
     ${{ valueSales.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="valueSales"
-        type="range" 
-        min="1" 
-        :max="1_000_000" 
+        type="range"
+        min="1"
+        :max="1_000_000"
         class="slider"
         disabled
        >
@@ -140,14 +140,13 @@
         class="slider" 
         disabled
       >
-        
    </div>
    </div><br>
    <div class="row">
   Selling Price of the Business
     <div class="cell">
       ${{ sellingPrice.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model.number="sellingPrice"
         type="range" 
         min="1" 
@@ -192,7 +191,7 @@
         v-model="guaranteeSBA"
         type="range" 
         min="1" 
-        :max="1_000_000"  
+        :max="1_000_000"
         class="slider" 
         disabled
       >
@@ -243,18 +242,16 @@
       ${{ annualizedDebt.toLocaleString("en-US") }}
       </div>
    </div>
-   
-   
    <br>
    <div class="row">
   Net Cash Flow
    <div class="cell">
     ${{ cashFlow.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="cashFlow"
-        type="range" 
-        min="1" 
-        :max="1_000_000" 
+        type="range"
+        min="1"
+        :max="1_000_000"
         class="slider"
         disabled
        >
@@ -267,11 +264,11 @@
         v-model="personalExpenses"
         type="text"
       >
-      <input 
+      <input
         v-model="personalExpenses"
-        type="range" 
-        min="0" 
-        :max="cashFlow" 
+        type="range"
+        min="0"
+        :max="cashFlow"
         class="slider"
       >
     </div>
@@ -280,11 +277,11 @@
   Net Cash Flow to Service the Debt
     <div class="cell">
     ${{ netCashDebt.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="netCashDebt"
-        type="range" 
-        min="0" 
-        :max="cashFlow" 
+        type="range"
+        min="0"
+        :max="cashFlow"
         class="slider"
         disabled
       >
@@ -294,23 +291,23 @@
  Debt Service
     <div class="cell"
     >
-    <span 
-      class="green" 
+    <span
+      class="green"
       v-if="debtService >= 1.25"
     >
     {{ debtService }}
     </span>
-     <span 
-      class="red" 
+     <span
+      class="red"
       v-if="debtService < 1.25"
     >
     {{ debtService }}
     </span>
-      <input 
+      <input
         v-model="debtSerivce"
-        type="range" 
-        min="1" 
-        :max="1_000_000" 
+        type="range"
+        min="1"
+        :max="1_000_000"
         class="slider"
         disabled
       >
