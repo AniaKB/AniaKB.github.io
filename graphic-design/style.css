@@ -168,7 +168,4 @@ section {
   .about-me {
     display: flex;
   }
-  nav {
-    text-align: right;
-  }
 }

@@ -19,14 +19,14 @@
    <div class="row">
   {{ company }} profits (Finzap)
     <div class="cell">
-      $<input 
+      $<input
         v-model="profits"
         type="text"
       >
-      <progress 
-        :value="profits" 
-        min="1" 
-        :max="sales" 
+      <progress
+        :value="profits"
+        min="1"
+        :max="sales"
         class="profits"
         disabled
         ></progress>
@@ -39,11 +39,11 @@
         v-model="addbacks"
         type="text"
       >
-      <progress 
+      <progress
         :value="addbacks"
-        type="range" 
-        min="1" 
-        :max="sales" 
+        type="range"
+        min="1"
+        :max="sales"
         class="addbacks"
         ></progress>
     </div>
@@ -90,11 +90,11 @@
   Sales Multiple
     <div class="cell">
     {{ salesMultiple }}&nbsp;
-      <input 
+      <input
         v-model="salesMultiple"
         type="range"
-        min="1" 
-        :max="10" 
+        min="1"
+        :max="10"
         class="slider"
         disabled
       >
@@ -104,11 +104,11 @@
   Earnings Multiple
     <div class="cell">
     {{ earningsMultiple }}&nbsp;
-      <input 
+      <input
         v-model="earningsMultiple"
-        type="range" 
-        min="1" 
-        :max="10" 
+        type="range"
+        min="1"
+        :max="10"
         class="slider"
         disabled
       >
@@ -132,12 +132,12 @@
   Value based on Earnings Multiple
     <div class="cell">
     ${{ valueEarnings.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="valueEarnings"
-        type="range" 
-        min="1" 
-        :max="1_000_000"  
-        class="slider" 
+        type="range"
+        min="1"
+        :max="1_000_000"
+        class="slider"
         disabled
       >
    </div>
@@ -148,10 +148,10 @@
       ${{ sellingPrice.toLocaleString("en-US") }}
       <input
         v-model.number="sellingPrice"
-        type="range" 
-        min="1" 
-        :max="1_000_000"  
-        class="slider" 
+        type="range"
+        min="1"
+        :max="1_000_000"
+        class="slider"
       >
     </div>
    </div>
@@ -159,12 +159,12 @@
    Working Cap
     <div class="cell">
       ${{ workingCap.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="workingCap"
-        type="range" 
-        min="1" 
-        :max="1_000_000"  
-        class="slider" 
+        type="range"
+        min="1"
+        :max="1_000_000"
+        class="slider"
         disabled
       >
     </div>
@@ -173,12 +173,12 @@
   Closing Fees
     <div class="cell">
     ${{ closingFees.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="closingFees"
-        type="range" 
-        min="1" 
-        :max="1_000_000"  
-        class="slider" 
+        type="range"
+        min="1"
+        :max="1_000_000"
+        class="slider"
         disabled
       >
     </div>
@@ -187,12 +187,12 @@
   Guarantee SBA
     <div class="cell">
     ${{ guaranteeSBA.toLocaleString("en-US")  }}
-      <input 
+      <input
         v-model="guaranteeSBA"
-        type="range" 
-        min="1" 
+        type="range"
+        min="1"
         :max="1_000_000"
-        class="slider" 
+        class="slider"
         disabled
       >
     </div>
@@ -201,12 +201,12 @@
   Subtotal
     <div class="cell">
     ${{ subtotal.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model="subtotal"
-        type="range" 
-        min="1" 
-        :max="1_000_000"  
-        class="slider" 
+        type="range"
+        min="1"
+        :max="1_000_000"
+        class="slider"
         disabled
       >
     </div>
@@ -215,12 +215,12 @@
   Down Payment by Buyer
     <div class="cell">
     ${{ downpayment.toLocaleString("en-US") }}
-      <input 
+      <input
         v-model.number="downpaymentPercent"
-        type="range" 
-        min="0" 
-        :max="100"  
-        class="slider" 
+        type="range"
+        min="0"
+        :max="100"
+        class="slider"
       >
     </div>
    </div>
