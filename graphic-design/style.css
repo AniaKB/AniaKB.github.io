@@ -51,6 +51,10 @@ h2 {
   padding: 15px;
 }
 
+#navbar {
+  background-color:#faded5;
+}
+
 a.nav:hover {
   color: #000000;
   text-decoration: none;
