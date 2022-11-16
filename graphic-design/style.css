@@ -53,6 +53,8 @@ h2 {
 
 #navbar {
   background-color:#faded5;
+  padding: 3px;
+  text-align: center;
 }
 
 a.nav:hover {
