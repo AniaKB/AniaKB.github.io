@@ -177,4 +177,8 @@ section {
 
 .badge {
   border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 3px;
 }
