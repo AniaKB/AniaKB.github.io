@@ -174,3 +174,7 @@ section {
   text-decoration: underline;
   font-size: 25px;
 }
+
+.badge {
+  border-style: solid;
+}
