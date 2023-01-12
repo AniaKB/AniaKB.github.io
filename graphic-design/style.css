@@ -10,6 +10,10 @@ body{
   padding: 10px;
 }
 
+main {
+  padding-left: 45px;
+}
+
 h1 {
   color: #faded5;
   font-family: 'Playfair Display';
@@ -38,7 +42,7 @@ h2 {
   text-align:center;
   color: #4e3c3e;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .about-me {
@@ -162,6 +166,19 @@ section {
 .projects > h3 {
   text-decoration: underline;
   font-size: 25px;
+}
+
+#aside {
+  z-index: 1;
+  position: fixed;
+  background-color: #faded5;
+  min-width: 280px;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100%;
+  border-right: solid;
+  border-color: #805E73;
 }
 
 @media only screen and (max-width: 1265px) {
