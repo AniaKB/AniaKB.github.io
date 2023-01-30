@@ -182,5 +182,6 @@ section {
   padding: 5px;
   margin: 3px;
   font-size: 12px;
+  font-family: 'Playfair Display'!important;
   background-color: rgba(255, 255, 255, 0.15);
 }

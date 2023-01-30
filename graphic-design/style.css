@@ -19,6 +19,7 @@ h1 {
   font-family: 'Playfair Display';
   text-align:center;
   font-size: 40px;
+  margin-left: 75px;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
   font-family: 'Playfair Display';
   text-align: center;
   padding: 7px;
+  margin-left: 75px;
 }
 
 #welcome-section {
@@ -172,7 +174,7 @@ section {
   z-index: 1;
   position: fixed;
   background-color: #faded5;
-  min-width: 280px;
+  min-width: 260px;
   top: 0px;
   left: 0px;
   width: 100px;
