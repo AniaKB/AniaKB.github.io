@@ -15,24 +15,23 @@ main {
 }
 
 h1 {
-  color: #faded5;
-  font-family: 'Playfair Display';
+  color:#57dffa;
+  font-family:  'Lato', sans-serif;
   text-align:center;
   font-size: 40px;
   margin-left: 75px;
 }
 
 h2 {
-  background-color: #ac9088;
-  color: black;
-  font-family: 'Playfair Display';
+  color: #57dffa;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   padding: 7px;
   margin-left: 75px;
 }
 
 #welcome-section {
-  color: #faded5;
+  color: #352722;
   font-size: 25px;
   margin-right: auto;
   margin-left: auto;
@@ -47,10 +46,6 @@ h2 {
   padding: 10px;
 }
 
-.about-me {
-  padding: 30px;
-}
-
 #content,a {
   color: #4e3c3e;
   font-size: 20px;
@@ -58,25 +53,15 @@ h2 {
 }
 
 #navbar {
-  background-color:#faded5;
+  background-color:#d5f7fa;
   padding: 3px;
   text-align: center;
+  border-radius: 25px;
 }
 
 a.nav:hover {
   color: #000000;
   text-decoration: none;
-}
-
-img {
-  background-color: #000000;
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  width: 350px;
-  padding: 10px;
-  border-radius: 600px;
-  position: absolute;
 }
 
 .about-me{
@@ -110,7 +95,7 @@ ul, li
 
 .project-tile {
   display: block;
-  background-color: #805E73;
+  background-color: #5e6080;
   background-image: url('noise.png');
   color: white;
   padding: 14px 28px;
@@ -161,7 +146,7 @@ footer {
 }
 
 section {
-  background-color: rgba(128, 94, 115, 0.4);
+  background-color: rgba(71, 60, 156, 0.4);
   border-radius: 20px;
 }
 
@@ -173,14 +158,14 @@ section {
 #aside {
   z-index: 1;
   position: fixed;
-  background-color: #faded5;
-  min-width: 260px;
+  background-color: #d5f7fa;
+  min-width: 220px;
   top: 0px;
   left: 0px;
   width: 100px;
   height: 100%;
   border-right: solid;
-  border-color: #805E73;
+  border-color: rgb(81, 71, 122), 94, 128);
 }
 
 header {
