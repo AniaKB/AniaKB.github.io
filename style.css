@@ -115,7 +115,7 @@ ul, li
 
 .project-tile {
   display: block;
-  background-color: #805E73;
+  background-color: #5e6080;
   background-image: url('noise.png');
   color: white;
   padding: 14px 28px;
@@ -132,7 +132,7 @@ ul, li
 }
 
 .project-description {
-  color: #4e3c3e;
+  color: #403c4e;
   padding: 0px 15px 15px 15px;
 }
 
@@ -166,7 +166,7 @@ footer {
 }
 
 section {
-  background-color: rgba(128, 94, 115, 0.4);
+  background-color: rgba(101, 94, 128, 0.4);
   border-radius: 20px;
 }
 
