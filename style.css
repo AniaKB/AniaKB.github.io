@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 body{
  /* background-color: #243B4A; #F8E1D1;*/
@@ -14,15 +14,16 @@ h1 {
   color: #faded5;
   font-family: 'Comforter', sans-serif;
   text-align:center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
   background-color: #ac9088;
   color: black;
-  font-family: 'Playfair Display';
+  font-family: 'Open Sans';
   text-align: center;
   padding: 7px;
+  border-radius: 100px;
 }
 
 #welcome-section {
@@ -34,6 +35,7 @@ h2 {
 
 #content, .projects {
   background-color: #f8c9b9 !important;
+  background-image: url('noise.png');
   overflow: hidden;
   text-align:center;
   color: #4e3c3e;
@@ -59,8 +61,7 @@ a.nav:hover {
 img {
   background-color: #4e3c3e;
   display: block;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0px 20px 20px 20px;
   width: 200px;
   padding: 10px;
   border-radius: 600px;
@@ -70,6 +71,53 @@ img {
 .about-me{
   text-align: center;
   padding-left: 160px;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+}
+
+section {
+  background-color: rgba(101, 94, 128, 0.4);
+  border-radius: 20px;
+  width: 470px;
+  margin: 5px;
+}
+
+.badge {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 3px;
+  font-size: 12px;
+  font-family: 'Playfair Display'!important;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.project-link {
+  display: block;
+  background-color: #1a3f57;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Comforter', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 400px;
+}
+
+:hover.project-link {
+  background-color: #386482;
+}
+
+.project-description {
+  color: #403c4e;
+  padding: 0px 15px 15px 15px;
 }
 
 p {
@@ -113,29 +161,6 @@ ul, li
   }
 }
 
-.project-tile {
-  display: block;
-  background-color: #5e6080;
-  background-image: url('noise.png');
-  color: white;
-  padding: 14px 28px;
-  cursor: pointer;
-  text-align: center;
-  font-family: 'Comforter', sans-serif;
-  font-size: 40px;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
-:hover.project-tile {
-  background-color: #4E4D5C;
-}
-
-.project-description {
-  color: #403c4e;
-  padding: 0px 15px 15px 15px;
-}
-
 .thumbnail-container {
   display: flex;
   align-items: center;
@@ -165,23 +190,3 @@ footer {
   padding: 10px;
 }
 
-section {
-  background-color: rgba(101, 94, 128, 0.4);
-  border-radius: 20px;
-}
-
-.projects > h3 {
-  text-decoration: underline;
-  font-size: 25px;
-}
-
-.badge {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 15px;
-  padding: 5px;
-  margin: 3px;
-  font-size: 12px;
-  font-family: 'Playfair Display'!important;
-  background-color: rgba(255, 255, 255, 0.15);
-}
