@@ -159,6 +159,9 @@ ul, li
   nav {
     text-align: right;
   }
+  #projects {
+    display: flex;
+  }
 }
 
 .thumbnail-container {
