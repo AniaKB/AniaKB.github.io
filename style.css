@@ -47,7 +47,7 @@ h2 {
   padding: 15px;
 }
 
-#content,a {
+#content, nav > a {
   color: #4e3c3e;
   font-size: 20px;
   padding: 15px;
@@ -58,7 +58,7 @@ a.nav:hover {
   text-decoration: none;
 }
 
-img {
+header > img {
   background-color: #4e3c3e;
   display: block;
   margin: 0px 20px 20px 20px;
@@ -68,9 +68,16 @@ img {
   position: absolute;
 }
 
-.about-me{
+img {
+  background-color: #4e3c3e;
+  width: 300px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.about-me {
   text-align: center;
-  padding-left: 160px;
+  font-size: 40px;
 }
 
 #projects {
@@ -115,9 +122,18 @@ section {
   background-color: #386482;
 }
 
+.project-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  max-height: 204px;
+  overflow-y: scroll;
+}
+
 .project-description {
   color: #403c4e;
-  padding: 0px 15px 15px 15px;
+  padding: 0px 5px 0px 5px;
 }
 
 p {
@@ -128,7 +144,7 @@ p {
   display: block;
 }
 
-ul, li
+.column > ul, li
 {
   width: 400px;
   max-width: auto;
@@ -138,6 +154,7 @@ ul, li
   margin-left: auto;
   margin-right: auto;
 }
+
 .row {
   display: flex;
 }
