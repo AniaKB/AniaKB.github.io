@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body{
  /* background-color: #243B4A; #F8E1D1;*/
   background-image: url('noise.png'), linear-gradient(to right, #ac9088 ,#2D4654, #243B4A);
   text-align: justify;
-  font-family: 'Playfair Display';
+  font-family: 'Lato';
   font-size: 18px;
   white-space:wrap;
   padding: 10px;
@@ -12,7 +12,7 @@ body{
 
 h1 {
   color: #faded5;
-  font-family: 'Comforter', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align:center;
   font-size: 30px;
 }
@@ -23,7 +23,7 @@ h2 {
   font-family: 'Open Sans';
   text-align: center;
   padding: 7px;
-  border-radius: 100px;
+  border: double;
 }
 
 #welcome-section {
@@ -44,7 +44,7 @@ h2 {
 }
 
 .about-me {
-  padding: 15px;
+  padding: 3px;
 }
 
 #content, nav > a {
@@ -64,8 +64,9 @@ header > img {
   display: block;
   margin: 0px 20px 20px 20px;
   width: 200px;
-  padding: 10px;
+  padding: 0px;
   border-radius: 600px;
+  border: double black;
   position: absolute;
 }
 

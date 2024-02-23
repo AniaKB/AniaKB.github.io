@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body{
  /* background-color: #243B4A; #F8E1D1;*/
   background-image: url('/noise.png'), linear-gradient(to right, #2D4654, #ac9088, #f8c9b9 );
   text-align: justify;
-  font-family: 'Playfair Display';
+  font-family: 'Lato';
   font-size: 18px;
   white-space:wrap;
   padding: 10px;
@@ -18,12 +18,22 @@ h1 {
 }
 
 h2 {
-  background-color: linear-gradient(to right, #f8c9b9, #ac9088);
+  background-color: rgba(248, 201, 185, 0.6);
   color: black;
   font-family: 'Open Sans';
   text-align: center;
   padding: 7px;
-  border-radius: 100px;
+  border: double;
+}
+
+.portrait {
+  background-color: #4e3c3e;
+  display: block;
+  margin: 0px 20px 20px 20px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 600px;
+  position: absolute;
 }
 
 #welcome-section {
@@ -47,7 +57,7 @@ h2 {
 #navbar {
   background-color: #f8c9b9;
   background-image: url('noise.png');
-  border-radius: 30px;
+  border: double;
   padding: 5px;
   width: 100%;
   text-align: center;
@@ -165,7 +175,7 @@ p {
 
 .spacer {
   width: 1px;
-  height: 200px;
+  height: 50px;
 }
 
 footer {
