@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">');'
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 body{
  /* background-color: #243B4A; #F8E1D1;*/
-  background-image: url('noise.png'), linear-gradient(to right, #ac9088 ,#2D4654, #243B4A);
+  background-image: url('/noise.png'), linear-gradient(to right, #2D4654, #ac9088, #f8c9b9 );
   text-align: justify;
   font-family: 'Playfair Display';
   font-size: 18px;
@@ -10,74 +10,105 @@ body{
   padding: 10px;
 }
 
-main {
-  margin-left: 75px;
-}
-
 h1 {
-  color:#57dffa;
-  font-family:  'Lato', sans-serif;
+  color: #faded5;
+  font-family: 'Comforter', sans-serif;
   text-align:center;
-  font-size: 40px;
-  margin-left: 75px;
+  font-size: 30px;
 }
 
 h2 {
-  color: #57dffa;
-  font-family: 'Lato', sans-serif;
+  background-color: linear-gradient(to right, #f8c9b9, #ac9088);
+  color: black;
+  font-family: 'Open Sans';
   text-align: center;
   padding: 7px;
-  margin-left: 75px;
+  border-radius: 100px;
 }
 
 #welcome-section {
-  color: #352722;
+  color: #faded5;
   font-size: 25px;
   margin-right: auto;
   margin-left: auto;
 }
 
-#content, .projects {
-  background-color: #f8c9b9 !important;
-  overflow: hidden;
-  text-align:center;
-  color: #4e3c3e;
-  border-radius: 20px;
-  padding: 10px;
+.about-me {
+  padding: 15px;
 }
 
-#content,a {
+#content, nav > a {
   color: #4e3c3e;
+  text-decoration: none;
   font-size: 20px;
   padding: 15px;
 }
 
 #navbar {
-  background-color:#d5f7fa;
-  padding: 3px;
+  background-color: #f8c9b9;
+  background-image: url('noise.png');
+  border-radius: 30px;
+  padding: 5px;
+  width: 100%;
   text-align: center;
-  border-radius: 25px;
 }
 
 a.nav:hover {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.about-me{
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  background-color: #4e3c3e;
+  width: 300px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.about-me {
   text-align: center;
-  padding-left: 180px;
+  font-size: 40px;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+}
+
+section {
+  background-color: rgba(101, 94, 128, 0.4);
+  border-radius: 20px;
+  width: 470px;
+  margin: 5px;
+}
+
+.badge {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 3px;
+  font-size: 12px;
+  font-family: 'Playfair Display'!important;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 p {
-  padding: 1px 10px 3px 10px;
-  text-align: center;
+  padding: 1px 20px 3px 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
   display: block;
 }
 
-ul, li
+.column > ul, li
 {
-  width: 400px;
   max-width: auto;
   padding:10px;
   text-align: left;
@@ -85,6 +116,7 @@ ul, li
   margin-left: auto;
   margin-right: auto;
 }
+
 .row {
   display: flex;
 }
@@ -93,27 +125,22 @@ ul, li
   flex: 50%;
 }
 
-.project-tile {
-  display: block;
-  background-color: #5e6080;
-  background-image: url('noise.png');
-  color: white;
-  padding: 14px 28px;
-  cursor: pointer;
-  text-align: center;
-  font-family: 'Comforter', sans-serif;
-  font-size: 40px;
-  text-decoration: none;
-  border-radius: 10px;
+@media only screen and (max-width: 1265px) {
+  .about-me {
+    display: block;
+  }
 }
 
-:hover.project-tile {
-  background-color: #4E4D5C;
-}
-
-.project-description {
-  color: #4e3c3e;
-  padding: 0px 15px 15px 15px;
+@media only screen and (max-width: 952px) {
+  .about-me {
+    display: flex;
+  }
+  nav {
+    text-align: right;
+  }
+  #projects {
+    display: flex;
+  }
 }
 
 .thumbnail-container {
@@ -143,45 +170,6 @@ ul, li
 
 footer {
   padding: 10px;
+  font-size: 15px;
 }
 
-section {
-  background-color: rgba(71, 60, 156, 0.4);
-  border-radius: 20px;
-}
-
-.projects > h3 {
-  text-decoration: underline;
-  font-size: 25px;
-}
-
-#aside {
-  z-index: 1;
-  position: fixed;
-  background-color: #d5f7fa;
-  min-width: 220px;
-  top: 0px;
-  left: 0px;
-  width: 100px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgb(81, 71, 122), 94, 128);
-}
-
-header {
-  padding: 10px;
-  text-align: center;
-  font-size: 25px;
-}
-
-@media only screen and (max-width: 1265px) {
-  .about-me {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 952px) {
-  .about-me {
-    display: flex;
-  }
-}
