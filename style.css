@@ -167,6 +167,15 @@ p {
   flex: 50%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1265px) {
   .about-me {
     display: block;
