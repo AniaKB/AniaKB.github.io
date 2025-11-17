@@ -4,7 +4,7 @@ body{
  /* background-color: #243B4A; #F8E1D1;*/
   background-image: url('noise.png'), linear-gradient(to right, #ac9088 ,#2D4654, #243B4A);
   text-align: justify;
-  font-family: 'Lato';
+  font-family: 'Acme', sans-serif;
   font-size: 18px;
   white-space:wrap;
   padding: 10px;
@@ -12,7 +12,7 @@ body{
 
 h1 {
   color: #faded5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Acme', sans-serif;
   text-align:center;
   font-size: 30px;
 }
@@ -20,7 +20,7 @@ h1 {
 h2 {
   background-color: #ac9088;
   color: black;
-  font-family: 'Open Sans';
+  font-family: 'Acme', sans-serif;
   text-align: center;
   padding: 7px;
   border: double;
@@ -115,8 +115,8 @@ section {
   padding: 14px 28px;
   cursor: pointer;
   text-align: center;
-  font-family: 'Comforter', sans-serif;
-  font-size: 25px;
+  font-family: 'Acme', sans-serif;
+  font-size: 29px;
   text-decoration: none;
   border-radius: 10px;
   width: 400px;
